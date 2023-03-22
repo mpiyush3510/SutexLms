@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
@@ -43,6 +45,16 @@ MaterialDatePicker<Long> materialDatePicker;
             intent=new Intent(SignUpTeachers.this, SignIn.class);
             startActivity(intent);
         });
+        binding.SignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isValid()){
+                    intent= new Intent(SignUpTeachers.this,SignIn.class);
+                    showToast("Teacher Successfully registered !");
+                    startActivity(intent);
+                }
+            }
+        });
 
     }
     private void CustomDatePicker(){
@@ -50,5 +62,37 @@ MaterialDatePicker<Long> materialDatePicker;
                 .setTitleText("SElect Your BirthDate")
                 .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
                 .build();
+    }
+    private boolean isValid(){
+        if(binding.FirstName.getText().toString().isEmpty()){
+            showToast("Please Enter First Name");
+            return false;
+        }else if (binding.LastName.getText().toString().isEmpty()){
+            showToast("Enter Your Surname");
+            return false;
+        }else if (binding.Email.getText().toString().isEmpty()){
+            showToast("Please Enter your Mail");
+            return false;
+        } else if (!Patterns.EMAIL_ADDRESS.matcher(binding.Email.getText().toString()).matches()) {
+            showToast("Enter Correct Email");
+            return false;
+        } else if (binding.BirthDate.getText().toString().isEmpty()) {
+            showToast("Enter Tour BirthDate");
+            return false;
+        } else if (binding.PhoneNo.getText().toString().isEmpty()){
+            showToast("Enter Your Mobile Number");
+            return false;
+        }else if (binding.PhoneNo.getText().toString().length() <10 ) {
+            showToast("Phone No Must Be 10 Digit");
+            return false;
+        }  else if (binding.Tid.getText().toString().isEmpty()) {
+            showToast("Enter Your Teachers ID");
+            return false;
+        }else{
+            return true;
+        }
+    }
+    private void showToast(String str){
+        Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
     }
 }

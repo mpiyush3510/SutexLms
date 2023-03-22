@@ -985,6 +985,7 @@ MaterialDatePicker<Long> materialDatePicker;
             public void onClick(View v) {
                 if (isValid()){
                     intent=new Intent(SignUp.this, SignIn.class);
+                    showToast("Student Successfully registered !");
                     startActivity(intent);
                 }
             }
