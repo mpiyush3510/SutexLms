@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">SutexLms</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_or_phone">Email or Phone</string>
+    <string name="password">Password</string>
+    <string name="sign_in_here">Sign In Here !</string>
+    <string name="sign_up_here">Sign Up Here !</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone No</string>
+    <string name="roll_no">Roll No</string>
+    <string name="division">Division</string>
+    <string name="student_id">Student Id</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="teachers_id">Teachers Id</string>
+    <string name="already_have_an_account">Already have an account</string>
 </resources>
