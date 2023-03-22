@@ -34,7 +34,7 @@
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:hint="@string/first_name"
@@ -52,10 +52,10 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:hint="@string/first_name"
+                android:hint="@string/last_name"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="300dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:hint="@string/birth_date"
@@ -118,8 +118,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
-                android:src="@drawable/src_calendar32"
-                app:tint="@color/md_theme_light_primary" />
+                android:src="@drawable/src_calendar1"/>
 
         </LinearLayout>
 

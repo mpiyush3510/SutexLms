@@ -17,4 +17,8 @@
     <string name="birth_date">Birth Date</string>
     <string name="teachers_id">Teachers Id</string>
     <string name="already_have_an_account">Already have an account</string>
+    <string name="who_are_you">Who Are You ?</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="made_with_india">Made with India ❤️</string>
 </resources>
