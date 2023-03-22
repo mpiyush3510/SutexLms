@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.mpiyush510.sutexlms.R;
+import com.mpiyush510.sutexlms.StartUp;
 import com.mpiyush510.sutexlms.databinding.ActivitySignInBinding;
 
 public class SignIn extends AppCompatActivity {
@@ -24,7 +25,7 @@ Intent intent;
         binding.CreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent=new Intent(SignIn.this, SignUp.class);
+                intent=new Intent(SignIn.this, StartUp.class);
                 startActivity(intent);
             }
         });

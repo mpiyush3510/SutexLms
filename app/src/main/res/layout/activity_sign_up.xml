@@ -41,6 +41,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FirstName"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
                     android:inputType="textPersonName"
@@ -59,6 +60,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LastName"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
                     android:inputType="textPersonName"
@@ -79,6 +81,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:inputType="textEmailAddress"
@@ -131,6 +134,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PhoneNo"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:inputType="number"
@@ -156,6 +160,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/Rno"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
                     android:inputType="none"
@@ -174,6 +179,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/Division"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
                     android:inputType="none"
@@ -194,6 +200,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Sid"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:inputType="number"
@@ -206,6 +213,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/SignUp"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
