@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
+import com.mpiyush510.sutexlms.ExportData;
 import com.mpiyush510.sutexlms.R;
 import com.mpiyush510.sutexlms.databinding.ActivitySignUpBinding;
 
@@ -984,8 +985,9 @@ MaterialDatePicker<Long> materialDatePicker;
             @Override
             public void onClick(View v) {
                 if (isValid()){
-                    intent=new Intent(SignUp.this, SignIn.class);
+                    intent=new Intent(SignUp.this, ExportData.class);
                     showToast("Student Successfully registered !");
+                    exportData();
                     startActivity(intent);
                 }
             }
@@ -1034,6 +1036,16 @@ MaterialDatePicker<Long> materialDatePicker;
         } else{
             return true;
         }
+    }
+    private void exportData(){
+        intent.putExtra("FirstName",binding.FirstName.getText().toString());
+        intent.putExtra("LastName",binding.LastName.getText().toString());
+        intent.putExtra("Email",binding.Email.getText().toString());
+        intent.putExtra("BirthDate",binding.BirthDate.getText().toString());
+        intent.putExtra("PhoneNo",binding.PhoneNo.getText().toString());
+        intent.putExtra("Rno",binding.Rno.getText().toString());
+        intent.putExtra("Division",binding.Division.getText().toString());
+        intent.putExtra("Sid",binding.Sid.getText().toString());
     }
     private void showToast(String str){
         Toast.makeText(this, str, Toast.LENGTH_SHORT).show();

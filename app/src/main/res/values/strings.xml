@@ -21,4 +21,6 @@
     <string name="student">Student</string>
     <string name="teacher">Teacher</string>
     <string name="made_with_india">Made with India ❤️</string>
+    <string name="export_data">Export Data</string>
+    <string name="not_applicable">Not Applicable</string>
 </resources>
